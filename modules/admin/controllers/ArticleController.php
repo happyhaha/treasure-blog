@@ -158,9 +158,6 @@ class ArticleController extends Controller
             }
         }
         
-        return $this->render('category', [
-            'model'=>$article,
-            'categories'=>$categories
-        ]);
+        return $this->render('category', ['model'=>$article]);
     }
 }
