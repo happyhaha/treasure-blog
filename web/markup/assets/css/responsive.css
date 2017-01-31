@@ -1,0 +1,155 @@
+/* lg */
+@media (min-width: 1400px) {
+    .show-search {
+        right: 20%;
+    }
+}
+
+/* md */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .nav > li > a {
+        padding: 15px 10px;
+    }
+}
+
+/* sm */
+@media (min-width: 768px) and (max-width: 991px) {
+    .main-menu .navbar-brand > img {
+        display: block;
+        margin-right: 0;
+        padding: 14px 0
+    }
+
+    .main-menu .navbar-header {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    .main-menu .navbar-brand {
+        float: none;
+    }
+
+    .main-menu .navbar-nav > li {
+        float: none;
+    }
+
+    .main-menu .navbar-nav {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav > li > a {;
+        padding: 11px;
+    }
+
+    .i_con {
+        float: none;
+        position: relative;
+        padding-right: 40px;
+        width: 100%;
+        text-align: center;
+    }
+    .i_con a i {
+        font-size: 15px;
+        padding: 0 5px 10px;
+        color: #AAAAAA;
+        line-height: 35px;
+    }
+    .show-search {
+        top: 100%;
+        right: 9%;
+    }
+
+
+    .single-blog-box .promo-text p {
+
+        padding-top: 12%;
+    }
+
+    .latest-first-thumb img, .single-blog-box img, .widget img, .single-promo-box img {
+        width: 100%;
+    }
+
+    .footer-instagram-section img {
+        width: 100%;
+    }
+
+    .footer-widget .about-me-img img {
+        max-width: 100% !important;
+    }
+
+}
+
+/* xs */
+@media (max-width: 767px) {
+    .show-search {
+        top: 80px;
+    }
+
+    .menu-left {
+        float: none;
+    }
+
+    .icon-right {
+        float: left;
+        margin-left: -17px;
+    }
+
+    .i_con {
+        float: left;
+        margin-left: -17px;
+    }
+
+    .i_con a i {
+        font-size: 15px;
+        padding: 15px 5px;
+        color: #AAAAAA;
+        line-height: 24px;
+    }
+
+    .main-menu ul .sub-menu, .main-menu ul .children {
+        left: 120px;
+        top: 17px;
+    }
+
+    .main-menu .navbar-brand > img {
+        padding: 0;
+    }
+
+    .navbar-header {
+        padding: 15px 0;
+    }
+
+    .main-menu li {
+        display: block;
+    }
+
+    .navbar-default .navbar-nav > li > a {
+        line-height: 22px;
+    }
+
+    .footer-instagram-section img {
+        width: 100%;
+    }
+
+    .latest-first-thumb img, .about-me-img img, .single-blog-box img, .widget img, .single-promo-box img {
+        width: 100%;
+    }
+
+    .footer-widget .about-me-img img {
+        max-width: 100% !important;
+    }
+
+    .single-blog-box .promo-text p {
+        padding-top: 12%;
+    }
+
+}
+
+/* XS Portrait */
+@media (max-width: 479px) {
+
+
+}
