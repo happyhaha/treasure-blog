@@ -12,7 +12,7 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'category_id')->dropDownList($categories) ?>
+    <?= Html::dropDownList('category', $selectedCategory, $categories, ['class'=>'form-control']) ?>
 
     <div class="form-group">
         <?= Html::submitButton('Submit', ['class' => 'btn btn-success']) ?>
