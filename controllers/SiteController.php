@@ -2,7 +2,9 @@
 
 namespace app\controllers;
 
+use app\models\Article;
 use Yii;
+use yii\data\Pagination;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
@@ -60,7 +62,24 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        // build a DB query to get all articles
+        $query = Article::find();
+
+        // get the total number of articles (but do not fetch the article data yet)
+        $count = $query->count();
+
+        // create a pagination object with the total count
+        $pagination = new Pagination(['totalCount' => $count, 'pageSize'=>1]);
+        
+        // limit the query using the pagination and retrieve the articles
+        $articles = $query->offset($pagination->offset)
+                            ->limit($pagination->limit)
+                            ->all();
+        
+        return $this->render('index',[
+            'articles'=>$articles,
+            'pagination'=>$pagination
+        ]);
     }
     
     public function actionView()
